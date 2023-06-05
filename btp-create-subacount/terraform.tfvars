@@ -1,0 +1,7 @@
+admin_user               = "user@gmail.com"
+admin_password           = "password"
+global_account_subdomain = "globalaccount_subdomain"
+subaccount_subdomain     = "subaccount_subdomain"
+subaccount_name          = "subaccount-name"
+subaccount_region        = "br10"
+subaccount_id            = "22222222-2973-478f-9e9c-1acb4701293b"
