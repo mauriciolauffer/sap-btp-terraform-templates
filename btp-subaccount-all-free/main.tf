@@ -44,7 +44,6 @@ resource "btp_subaccount_environment_instance" "cloudfoundry" {
 }
 
 provider "cloudfoundry" {
-  # api_url  = local.json_data_labels["API Endpoint"]
   api_url  = "https://api.cf.ap10.hana.ondemand.com"
   user     = var.admin_user
   password = var.admin_password
@@ -54,4 +53,12 @@ provider "cloudfoundry" {
 resource "cloudfoundry_space" "dev" {
   name = "dev"
   org  = btp_subaccount_environment_instance.cloudfoundry.platform_id
+}
+
+# CF Spaces Users
+resource "cloudfoundry_space_users" "org-space-dev-users" {
+  space      = cloudfoundry_space.dev.id
+  managers   = [var.admin_user]
+  developers = [var.admin_user]
+  auditors   = []
 }

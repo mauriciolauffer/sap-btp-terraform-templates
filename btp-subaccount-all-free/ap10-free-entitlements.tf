@@ -43,12 +43,12 @@ resource "btp_subaccount_entitlement" "content-agent-ui" {
   plan_name     = "free"
 }
 
-resource "btp_subaccount_entitlement" "cicd-app" {
+/* resource "btp_subaccount_entitlement" "cicd-app" {
   subaccount_id = btp_subaccount.dev.id
   service_name  = "cicd-app"
   plan_name     = "free"
   amount = 1
-}
+} */
 
 resource "btp_subaccount_entitlement" "credstore" {
   subaccount_id = btp_subaccount.dev.id
@@ -57,11 +57,11 @@ resource "btp_subaccount_entitlement" "credstore" {
   amount = 1
 }
 
-resource "btp_subaccount_entitlement" "data-attribute-recommendation" {
+/* resource "btp_subaccount_entitlement" "data-attribute-recommendation" {
   subaccount_id = btp_subaccount.dev.id
   service_name  = "data-attribute-recommendation"
   plan_name     = "free"
-}
+} */
 
 resource "btp_subaccount_entitlement" "data-privacy-integration-service" {
   subaccount_id = btp_subaccount.dev.id
@@ -70,11 +70,11 @@ resource "btp_subaccount_entitlement" "data-privacy-integration-service" {
   amount = 1
 }
 
-resource "btp_subaccount_entitlement" "dq-services" {
+/* resource "btp_subaccount_entitlement" "dq-services" {
   subaccount_id = btp_subaccount.dev.id
   service_name  = "dq-services"
   plan_name     = "free"
-}
+} */
 
 resource "btp_subaccount_entitlement" "retention-manager" {
   subaccount_id = btp_subaccount.dev.id
@@ -102,11 +102,11 @@ resource "btp_subaccount_entitlement" "sdm-repository" {
   plan_name     = "free"
 }
 
-resource "btp_subaccount_entitlement" "document-translation" {
+/* resource "btp_subaccount_entitlement" "document-translation" {
   subaccount_id = btp_subaccount.dev.id
   service_name  = "document-translation"
   plan_name     = "free"
-}
+} */
 
 resource "btp_subaccount_entitlement" "integrationsuite" {
   subaccount_id = btp_subaccount.dev.id
@@ -115,12 +115,12 @@ resource "btp_subaccount_entitlement" "integrationsuite" {
   amount = 1
 }
 
-resource "btp_subaccount_entitlement" "intelligent-situation-automation-app" {
+/* resource "btp_subaccount_entitlement" "intelligent-situation-automation-app" {
   subaccount_id = btp_subaccount.dev.id
   service_name  = "intelligent-situation-automation-app"
   plan_name     = "free"
   amount = 1
-}
+} */
 
 /* resource "btp_subaccount_entitlement" "kymaruntime" {
   subaccount_id = btp_subaccount.dev.id
@@ -129,11 +129,11 @@ resource "btp_subaccount_entitlement" "intelligent-situation-automation-app" {
   amount = 1
 } */
 
-resource "btp_subaccount_entitlement" "market-rates-byor" {
+/* resource "btp_subaccount_entitlement" "market-rates-byor" {
   subaccount_id = btp_subaccount.dev.id
   service_name  = "market-rates-byor"
   plan_name     = "free"
-}
+} */
 
 resource "btp_subaccount_entitlement" "mobile-services" {
   subaccount_id = btp_subaccount.dev.id
@@ -148,11 +148,11 @@ resource "btp_subaccount_entitlement" "personal-data-manager-service" {
   amount = 1
 }
 
-resource "btp_subaccount_entitlement" "recommendation-systems-production" {
+/* resource "btp_subaccount_entitlement" "recommendation-systems-production" {
   subaccount_id = btp_subaccount.dev.id
   service_name  = "recommendation-systems-production"
   plan_name     = "free"
-}
+} */
 
 resource "btp_subaccount_entitlement" "aicore" {
   subaccount_id = btp_subaccount.dev.id
@@ -168,12 +168,12 @@ resource "btp_subaccount_entitlement" "ai-launchpad" {
   amount = 1
 }
 
-resource "btp_subaccount_entitlement" "sap-build-apps" {
+/* resource "btp_subaccount_entitlement" "sap-build-apps" {
   subaccount_id = btp_subaccount.dev.id
   service_name  = "sap-build-apps"
   plan_name     = "free"
   amount = 1
-}
+} */
 
 resource "btp_subaccount_entitlement" "process-automation" {
   subaccount_id = btp_subaccount.dev.id
@@ -183,7 +183,7 @@ resource "btp_subaccount_entitlement" "process-automation" {
 
 resource "btp_subaccount_entitlement" "build-workzone-standard" {
   subaccount_id = btp_subaccount.dev.id
-  service_name  = "build-workzone-standard" #SAPLaunchpad
+  service_name  = "SAPLaunchpad"   #"build-workzone-standard"
   plan_name     = "free"
 }
 
@@ -200,11 +200,11 @@ resource "btp_subaccount_entitlement" "data-analytics-osb" {
   plan_name     = "free"
 }
 
-resource "btp_subaccount_entitlement" "sap-graph" {
+/* resource "btp_subaccount_entitlement" "sap-graph" {
   subaccount_id = btp_subaccount.dev.id
   service_name  = "sap-graph"
   plan_name     = "free"
-}
+} */
 
 resource "btp_subaccount_entitlement" "hana-cloud" {
   subaccount_id = btp_subaccount.dev.id
@@ -212,18 +212,18 @@ resource "btp_subaccount_entitlement" "hana-cloud" {
   plan_name     = "hana-free"
 }
 
-resource "btp_subaccount_entitlement" "mdgce" {
+/* resource "btp_subaccount_entitlement" "mdgce" {
   subaccount_id = btp_subaccount.dev.id
   service_name  = "mdgce"
   plan_name     = "free"
   amount = 1
-}
+} */
 
-resource "btp_subaccount_entitlement" "service-ticket-intelligence" {
+/* resource "btp_subaccount_entitlement" "service-ticket-intelligence" {
   subaccount_id = btp_subaccount.dev.id
   service_name  = "service-ticket-intelligence"
   plan_name     = "free"
-}
+} */
 
 resource "btp_subaccount_entitlement" "ui5-flexibility-keyuser" {
   subaccount_id = btp_subaccount.dev.id
